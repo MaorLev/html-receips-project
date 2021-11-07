@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  text-align: right;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background-image: url(../מתכונים.jpg) ;
+  /* background-size: 1000px; */
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+/* .navbar a.center {
+  
+  margin-left: 13cm;
+} */
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.topimg {
+  background-image: url(../ספינג.jpg);
+  width: 100%;
+  padding: 20px;
+}
+.bottomimg {
+   background-image: url(../פרנה.jpg); 
+  width: 100%;
+  padding: 20px;
+}
+.sideimg {
+  /* background-image: url(maor.jpeg); */
+  width: 100%;
+  padding: 20px;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body >
+
+<div class="header">
+    
+  <h1>מתכונים עדות</h1>
+  <p> אם סבתא שלכם מכינה לכם אוכל שאתם אוהבים ולא רוצה לגלות לכם מה המתכון, בשביל זה האתר קיים :) כדי לעזור לכם לשחזר אוכל של העדה שלכם</p>
+
+</div>
+
+<div class="navbar">
+    <!-- לחצןן הקישור לדף צור קשר -->
+  
+  <a href="../F-contact/contact.html">צור קשר</a>
+  <a  href="../F-recipe/recipe.html" class="right">מתכוני הבית</a>
+  <a href="../F-login/login.html" class="right" onclick="document.getElementById('id01').style.display='block'">התחברות</a>
+  
+  <a href="../F-registar/registar.html" class="right" >הרשמה</a>
+  
+  
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <div class="sideimg" style="height:200px;">Image</div>
+    <p>היי אני אליה מרציאנו אני בן 14 מראשון לציון אני בכיתה ט' ואני אוהב לבשל במיוחד מתכונים מרוקאים(שזו העדה שלי) במיוחד מתכונים שקיבלתי מסבתא:)</p>
+    <!-- <h3>More Text</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div> -->
+  </div>
+  <div class="main" >
+      <h1>בדף הבית יהיה שני מתכונים של העדה שלי. לעוד מתכונים לחצו על מתכוני הבית ותמצאו שם שלל מתכונים של העדה שלכם :)  </h1>
+    <h1>ספינג’</h1>
+    <h3>
+        <h2>בצק טיגון-</h2>
+        <ul dir="rtl">
+        <li>1ק"ג קמח לבן</li>
+        <li>1
+            קובייה או 50גרם שמרים טריים</li>
+        <li>1/2כוס סוכר לבן</li>
+        <li>1/2כפית מלח דק</li>
+        <li>800מ"ל מים פושרים</li>
+        
+
+      <h2>  -טיגון </h2>
+        <li>1 1/2ליטר שמן קנולה</li>
+       <h2> -ציפוי </h2>
+        <li>סוכר לבן</li>
+    </ul>
+</h3>
+
+    <div class="topimg" style="height:200px;">Image</div>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Dec 7, 2017</h5>
+    <div class="topimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <!-- <p>אופן ההכנה :</p>
+    <p><h3>.מכינים בצק ספינג’ ומתפיחים: בקערה הכי גדולה שיש מערבבים יחד קמח ושמרים. מוסיפים סוכר ומלח ומערבבים לתוך הקמח. מוסיפים חצי מכמות המים ומתחילים ללוש את הבצק למשך דקה, באצבעות פתוחות ובתנועות הרמה של הבצק מתחתית הקערה ועד לפני הבצק. בהדרגה מוסיפים את יתרת המים (כל הכמות!) וממשיכים ללוש עוד דקה, וזהו. אסור ללוש את הבצק הזה יותר מדי. הבצק יהיה מאוד נוזלי וזה בסדר.</h3></p>
+    <p><h3>.מכסים את פני הקערה בניילון נצמד ומתפיחים עד להכפלת הנפח.</h3></p>
+    <p><h3>לשים ומתפיחים שוב: מערבבים את הבצק בידיים להוצאת האוויר, מכסים ומתפיחים שוב. לקראת סיום התפיחה מחממים את השמן.</h3></p>
+    <p><h3>מטגנים, טובלים בסוכר ומגישים: טובלים את הידיים בקערית עם שמן (או מים) וחופנים פיסת בצק בגודל קלמנטינה. מושכים כלפי מעלה (הכדור ימשוך איתו את כל הבצק) וצובטים ביד השנייה (גם היא משומנת) כדי לנתק את הכדור מהבצק.</h3></p>
+    <p><h3>יוצרים חור בכדור באצבעות ומותחים את השוליים לצדדים, לקבלת צורת בייגלה, מיד מניחים את הספינג’ בשמן הלוהט.</h3></p>
+    <p><h3>ממשיכים למלא את הסיר בזריזות בעוד טבעות ספינג’ (טובלים את הידיים בשמן מדי פעם), מטגנים כ-2 דקות מכל צד עד להזהבה.</h3></p>
+    <p><h3>מוציאים את הספינג’ מהשמן לנייר סופג ומיד טובלים בקערה עם סוכר משני הצדדים לציפוי.</h3></p>
+    <p><h3>מגישים מיד.בתאבון:)</h3></p>
+    <br>
+    <h2>לחם פרנה מרוקאי</h2>
+    <h2>מצריכם למתכון</h2>
+    <ul dir="rtl">
+        <li><h3>1 ק"ג קמח מנופה</h3></li>
+        <li><h3>700-650 מ"ל מים</h3></li>
+        <li><h3>1 כפית סוכר</h3><li>
+        <li><h3>1 כף גדושה של מלח</h3></li>
+    </ul> -->
+    <div class="bottomimg" style="height:200px;">Image</div>
+    <p><h2>אופן ההכנה</h2></p>
+    <p><h3>1
+        מערבלים קמח, שמרים, סוכר ו-350 מ”ל (כוס וחצי פחות כף) מים במיקסר עם וו לישה. מוסיפים מלח ובהדרגה ולפי הצורך את יתרת המים. לשים 7-6 דקות לקבלת בצק דליל ודביק.</h3></p>
+    <p><h3>
+        2
+        מכסים ומתפיחים במקום חמים כשעה.
+    </h3></p>
+    <p><h3>3
+        
+מחממים תנור ל-220 מעלות ומניחים בתוכו תבנית עם חלוקי נחל או לבנת אפייה לחימום.
+    </h3></p>
+    <p><h3>4
+        מחלקים את הבצק ל-12 או ל-6 חלקים שווים (נעזרים במעט קמח כי הבצק דביק), מעצבים ומשטחים מעט על משטח מקומח היטב. מניחים לכמה דקות, כדי לתת לבצק הזדמנות לחזור לתפיחה רק עד שהתנור חם מספיק. מניחים את יריעות הבצק בזהירות על חלוקי הנחל הלוהטים (או על לבנת האפייה).
+    </h3></p>
+    <p><h3>5 
+        אופים 20-15 דקות עד שהפרנות מזהיבות יפה גם בתחתית.
+    </h3></p>
+  <!-- <ul dir="rtl">
+      <li>קמח</li>
+      <li>קמח</li>
+      <li>קמח</li>
+      <li>קמח</li>
+  </ul> -->
+</div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
